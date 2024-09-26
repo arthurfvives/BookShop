@@ -1,0 +1,17 @@
+﻿@model List<BookShop.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Boekenlijst</h2>
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>
+            <span>@book.Title door @book.Author voor € @book.Price</span>
+            <br />
+            <a href="/Books/Details/@book.Id">Bekijk details</a>
+        </li>
+    }
+</ul>

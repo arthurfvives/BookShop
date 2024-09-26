@@ -1,0 +1,12 @@
+﻿@model BookShop.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Model.Title</h2>
+<p><strong>Auteur:</strong> @Model.Author</p>
+<p><strong>Prijs:</strong> @Model.Price €</p>
+<p><strong>Beschrijving:</strong> @Model.Description</p>
+
+<a href="/Books">Terug naar boekenlijst</a>
